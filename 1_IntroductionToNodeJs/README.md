@@ -26,7 +26,6 @@ JS CODE ==> [JavaScript Engine] ==> Machine Code
 
 **Node is a program that has  embedded v8 engine with added features not available on the browser.**
 
-
 ## How Node Works
 
 ### Synchronous Operation 
@@ -57,7 +56,10 @@ Waiter A then goes to the next table to take their order. In this approach you w
 ``` javascript
 console.log('Hello World!');
 ```
-
+**Demo:** Running above program in NodeJs and chrome
+* Global Object / Window
+* Process /Document
+  
 ## Blocking & Non Blocking Code Example
 
 Blocking Code
@@ -114,3 +116,7 @@ const sum = x + y;
 console.log(`Sum of x+y is ${sum}`);
 
 ```
+
+
+**Demo:** Running above program in NodeJs to view the *blocking* & *non blocking* bheaviour
+
