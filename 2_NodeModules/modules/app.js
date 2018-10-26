@@ -1,3 +1,4 @@
+/* To use a external module in your current module you need to use require(<moduleFilePath>)*/
 const myLogger = require('./logger');
 
 myLogger.log('Hello World Revisted!!');

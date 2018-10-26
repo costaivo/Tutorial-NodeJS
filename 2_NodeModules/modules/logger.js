@@ -1,9 +1,11 @@
-var x=;
-var appName ='ABC Logger';
+//var x=;
+var appName = 'ABC Logger';
 
-function log(message){
-    console.log(`${appName}:${message}`);
+function log(message) {
+  console.log(`${appName}:${message}`);
 }
 
-module.exports.log = log;
-module.exports.appName=appName;
+module.exports = {
+  log,
+  appName
+};
