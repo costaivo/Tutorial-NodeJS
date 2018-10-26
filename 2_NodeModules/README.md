@@ -12,6 +12,7 @@ Every file in Node is a module. All Variables and funcitons defined in a file ar
   - [exports](https://nodejs.org/api/modules.html#modules_exports)
   - [module](https://nodejs.org/api/modules.html#modules_module)
   - [require()](https://nodejs.org/api/modules.html#modules_require)
+  - [console](https://nodejs.org/api/console.html)
 
 **Demo:**
 
