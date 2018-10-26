@@ -1,3 +1,4 @@
+var x=;
 var appName ='ABC Logger';
 
 function log(message){

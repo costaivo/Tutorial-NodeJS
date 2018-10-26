@@ -23,5 +23,13 @@ Every file in a Node is a module. All Variables and funcitons defined in a file 
   
 ## Using a Custom Module
 Demo:[Creating,Exporting & Using a Module](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/modules/app.js)
+Demo: How Node wraps a module?
+```Javascript
+var x=;
 
+(function (exports, require, module, __filename, __dirname) { var x=;
+```
 ## Using a  System Module
+* OS Module
+* File System Module
+* Path Module 
