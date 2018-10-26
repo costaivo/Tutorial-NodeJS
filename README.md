@@ -6,7 +6,7 @@
 * How Node Works
 * Installing Node
 * Hello World NodeJS
-* Blocking & Non Blocking Functions
+* Blocking & Non Blocking Code Example
 
 ## Node Modules
 * What is a Module

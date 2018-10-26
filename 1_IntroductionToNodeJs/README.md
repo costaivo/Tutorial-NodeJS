@@ -19,22 +19,27 @@ JS CODE ==> [JavaScript Engine] ==> Machine Code
 * chrome => v8
 
 ### NodeJS allowed running JS code outside of the browser.
-Ryan Dahl came up with the idea of running JS code outside of browser. He took the v8 Javascript engine and embedded in a program written in C++. This program was named as NodeJS. 
+**Ryan Dahl** came up with the idea of running JS code outside the  browser. He took the v8 Javascript engine and embedded it in a program written in C++. This program was named as NodeJS. 
 
 
 ![NodeJs Arch](https://snag.gy/Y1yUj6.jpg)
 
-
-![Nodejs Arch](https://snag.gy/le25qv.jpg)
-Node is a program that has  embedded v8 engine.  
+**Node is a program that has  embedded v8 engine with added features not available on the browser.**
 
 
 ## How Node Works
 
-Event Loop 
+### Synchronous Operation 
+* When the server recives a requests from the client a thread is allocated the request. The allocated thread processes the request. While processing if the thread has to do any I/O operations, then the Thread waits until the operation is completed. The processed results are send back to the client and the Thread is now available to accept the next client request. 
 
-Javascript 
-https://www.journaldev.com/7462/node-js-architecture-single-threaded-event-loop
+>>Example:
+>> Restaurant
+ 
+### Asynchronous Operation 
+* Node uses a single thread to handle all requests. If a I/O operations have to be performed. The thread puts a message on the *event Queue* the Thread then  processes the next request received from the client. Node continously checks the contents of the *event Queue* once the I/O operations are completed, the data is returned. 
+  
+
+[Article explaining NodJS working](https://www.journaldev.com/7462/node-js-architecture-single-threaded-event-loop)
 
 ## Installing Node
 
@@ -50,7 +55,7 @@ https://www.journaldev.com/7462/node-js-architecture-single-threaded-event-loop
 console.log('Hello World!');
 ```
 
-## Blocking & Non Blocking Functions
+## Blocking & Non Blocking Code Example
 
 Blocking Code
 ```javascript
