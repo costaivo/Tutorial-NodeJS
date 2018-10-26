@@ -15,8 +15,8 @@ Every file in Node is a module. All Variables and funcitons defined in a file ar
 
 **Demo:**
 
-- [Global Objects](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/1_GlobalObjects.js)
-- [Global Objects](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/2_GlobalObjects.js)
+- [Global Objects 1](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/1_GlobalObjects.js)
+- [Global Objects 2](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/2_GlobalObjects.js)
 
 ## Creating a Module
 
@@ -68,9 +68,11 @@ module.exports = {
 };
 ```
 
-**Demo:**[Creating,Exporting & Using a Module](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/modules/app.js)
+**Demo:**
 
-**Demo:** How Node wraps a module?
+- [Creating,Exporting & Using a Module](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/modules/app.js)
+
+- How Node wraps a module?
 
 ```Javascript
 var x=;
