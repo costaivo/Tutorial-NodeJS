@@ -70,8 +70,9 @@
 - Creating API to Add Users
 - Assiging ToDoList to Users
 
-## Working on Sample Project: Leave Management "Defining Scope of Project Modules to be developed
+## Working on Sample Project: Leave Management
 
+- Defining Scope of Project Modules to be developed
 - Database Design
 - API Calls  for  Employee Mangement
 - API Calls  for applying Leave
