@@ -68,8 +68,9 @@ module.exports = {
 };
 ```
 
-Demo:[Creating,Exporting & Using a Module](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/modules/app.js)
-Demo: How Node wraps a module?
+**Demo:**[Creating,Exporting & Using a Module](https://github.com/icosta-cci/nodejs/tree/master/2_NodeModules/modules/app.js)
+
+**Demo:** How Node wraps a module?
 
 ```Javascript
 var x=;
