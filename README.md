@@ -28,7 +28,7 @@
 - DevDependencies
 - Nodemon
 
-# SQL DB Refresher
+## SQL DB Refresher
 
 - Table
 - Views
@@ -36,11 +36,11 @@
 - Foreign Keys, Primary Keys, Unique Keys
 - Indexes
 
-# Database Design
+## Database Design
 
 - Todo Application DB Design Example
 
-# REST API
+## REST API
 
 - What is Express
 - Creating a GET Request
@@ -48,12 +48,12 @@
 - Creating a PUT Request
 - Creating a DELETE Request
 
-# Tools
+## Tools
 
 - Using Postman
 - GET/POST/PUT/DELETE Request setup on postman
 
-# Database Integration
+## Database Integration
 
 - Connecting to a database
 - Using Sequelize
@@ -61,7 +61,7 @@
 - Explain what is  ORM
 - Fetching Data from SQL into Node
 
-# CRUD Operations Using REST Endpoints
+## CRUD Operations Using REST Endpoints
 
 - Creating API for CRUD operations on ToDoList
 - Creating API for CRUD operations on ToDo Items
@@ -70,11 +70,11 @@
 - Creating API to Add Users
 - Assiging ToDoList to Users
 
-# Working on Sample Project: Leave Management "Defining Scope of Project Modules to be developed
+## Working on Sample Project: Leave Management "Defining Scope of Project Modules to be developed
 
 - Database Design
 - API Calls  for  Employee Mangement
 - API Calls  for applying Leave
 - API Calls Related to Approving Leave
 
-# Unit Tests
+## Unit Tests
