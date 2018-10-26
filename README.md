@@ -10,9 +10,11 @@
 
 ## Node Modules
 * What is a Module
+* Using a  System Module
 * Creating a Module
 * Exporting a Module
-* Using a Module
+* Using a Custom Module
+
 
 ## Node Package Manger	
 * What is it?
