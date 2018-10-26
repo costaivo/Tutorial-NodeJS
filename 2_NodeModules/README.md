@@ -83,19 +83,55 @@ To import a System module you need to specify the module name instead of the fil
 
 Below are some examples of System Modules available in nodeJs
 
-- OS Module
-- File System Module
-- Path Module
+- [OS Module](https://nodejs.org/api/os.html)
+- [File System Module](https://nodejs.org/api/fs.html)
+- [Path Module](https://nodejs.org/api/path.html)
 
-### OS Module
+### [OS Module](https://github.com/icosta-cci/nodejs/blob/master/2_NodeModules/systemModules/os.js)
 
-Node.js os module provides a few basic operating-system related utility functions. This module can be imported using the following syntax.
+Node.js os module provides a few basic operating-system related utility functions. This module can be imported using the following syntax:
 
 ```javascript
-var os = require('os');
+const os = require('os');
 ```
 
 Some methods exposed by os module
 
 **os.hostname()** Returns the hostname of the operating system.
 **os.type()** Returns the operating system name.
+
+### [File System Module](https://github.com/icosta-cci/nodejs/blob/master/2_NodeModules/systemModules/fileSystem.js)
+
+Node implements File I/O using simple wrappers around standard POSIX functions. This module can be imported using the following syntax:
+
+```javascript
+const os = require('os');
+```
+
+Every Method in fs has a **Synchronous** and **Asynchronous** implementation.
+
+> Example: Reading file
+
+```javascript
+const fs = require('fs');
+
+// Asynchronous read
+fs.readFile('nodejs2018.txt', function(err, contents) {
+  if (err) {
+    return console.error(err);
+  }
+  console.log('Asynchronous read: ' + data.toString());
+});
+
+// Synchronous read
+var contents = fs.readFileSync('nodejs2018.txt');
+console.log('Synchronous read: ' + contents.toString());
+```
+
+### [Path Module](https://github.com/icosta-cci/nodejs/blob/master/2_NodeModules/systemModules/path.js)
+
+The path module provides utilities for working with file and directory paths. This module can be imported using the following syntax:
+
+```javascript
+const os = require('os');
+```
