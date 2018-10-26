@@ -2,7 +2,7 @@
 
 ## What is a Module
 
-Every file in a Node is a module. All Variables and funcitons defined in a file are private to the module, unless they are exported.
+Every file in Node is a module. All Variables and funcitons defined in a file are private to the module, unless they are exported.
 
 - [Global Objects](https://nodejs.org/api/globals.html#globals_global)
   Node.js global objects are global in nature and they are available in all modules. We do not need to include these objects in our application, rather we can use them directly. These objects are modules, functions, strings and object itself as explained below.
