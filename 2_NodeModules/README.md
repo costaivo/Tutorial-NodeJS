@@ -139,3 +139,6 @@ The path module provides utilities for working with file and directory paths. Th
 ```javascript
 const os = require('os');
 ```
+
+### [HTTP Module](https://github.com/icosta-cci/nodejs/blob/master/2_NodeModules/systemModules/http-module.js)
+HTTP module allows to transfer data over Hyper Text Transfer Protocol (HTTP)
