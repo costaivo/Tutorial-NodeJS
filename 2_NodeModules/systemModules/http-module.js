@@ -1,9 +1,9 @@
 var http = require('http');
 
-//create a server object:
+/* create a server object: */
 // http.createServer(function (req, res) {
 //     //write a response to the client:
-//     res.write('NodeJS Tutorails'); 
+//     res.write('NodeJS Tutorails X'); 
 //     //end the response
 //     res.end(); 
 //   }).listen(8080); //the server object listens on port 8080
@@ -20,27 +20,27 @@ var http = require('http');
 
 
   /* Serve Multiple routes */
-//   const courseContents =
-//   [
-//   {name:"Introduction to NodeJS",id:1},
-//   {name:"Node Modules",id:2},
-//   {name:"Node Package Manger",id:3}
-// ];
-//   http.createServer((req,res)=>{
-//     if(req.url ==='/'){
-//       res.write('NodeJs 2018 Tutorial');
-//       res.end();
-//     }
-//     else if (req.url ==='/contents')
-//     {
-//       res.write(JSON.stringify(courseContents));
-//       res.end();
-//     }
-//     else{
-//       res.write('Hello World');
-//       res.end();
-//     }
-//   }).listen(8080);
+  const courseContents =
+  [
+  {name:"Introduction to NodeJS",id:1},
+  {name:"Node Modules",id:2},
+  {name:"Node Package Manger",id:3}
+];
+  http.createServer((req,res)=>{
+    if(req.url ==='/'){
+      res.write('NodeJs 2018 Tutorial');
+      res.end();
+    }
+    else if (req.url ==='/contents')
+    {
+      res.write(JSON.stringify(courseContents));
+      res.end();
+    }
+    else{
+      res.write('Hello World');
+      res.end();
+    }
+  }).listen(8080);
 
 /* Add a HTTP Header */
 // http.createServer(function (req, res) {

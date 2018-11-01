@@ -9,7 +9,7 @@ function error(message) {
 }
 
 function warning(message){
-    log(chalk.blue(`${appName}:${message}`));
+    log(chalk.italic.yellow(`${appName}:${message}`));
 }
 
 function info(message){
