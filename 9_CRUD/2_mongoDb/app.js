@@ -15,7 +15,9 @@ var Task = require('./models/task.model');
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/todoApp');
+mongoose.connect('mongodb://sa:sa1234#@ds143893.mlab.com:43893/my-todo-app',{ useNewUrlParser: true });
+//mongodb://localhost/todoApp
+//mongodb://sa:sa1234@#@ds143893.mlab.com:43893/my-todo-app
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

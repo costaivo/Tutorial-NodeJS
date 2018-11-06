@@ -12,4 +12,13 @@ module.exports = function(app) {
       .get(taskController.getTaskById)
       .put(taskController.updateTask)
       .delete(taskController.deleteTaskById);
+
+
+      // app
+      // .route('/tasks/user/:userId')
+      // .get(taskController.getTasksAssignedToUser);
+
+      app
+      .route('/tasks/user/:userId/:statusId?')
+      .get(taskController.getTasksAssignedToUserWithStatus);
 };

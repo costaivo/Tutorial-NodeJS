@@ -16,12 +16,12 @@ var getTasks = function(req, res) {
 };
 
 var updateTask =function(req,res){
-  if(!req.params.id)
+  if(!req.params.taskId)
   {
     res.status(500).send('Please specify task Id to modify');
   }
 
-  Task.findByIdAndUpdate(req.params.id,req.body,{new:true},(err,task)=>{
+  Task.findByIdAndUpdate(req.params.taskId,req.body,{new:true},(err,task)=>{
     if(err){
       res.status(500).send(err);
     }
@@ -43,7 +43,52 @@ var getTaskById = function(req, res) {
       res.status(201);
       res.json(tasks);
     }
-  });
+  }).populate({path:'assignedTo',select:'email firstName lastName'});
+
+};
+
+var getTasksAssignedToUser = function(req, res) {
+  console.log(`Request parameters :${req.params.userId}`)
+  if(!req.params.userId)
+  {
+    res.status(500).send('Please specify UserId to filter tasks');
+  }
+
+  var query = {assignedTo:req.params.userId};
+
+  Task.find(query, function(err, tasks) {
+    if (err) res.status(500).send(err);
+    else {
+      res.status(201);
+      res.json(tasks);
+    }
+  }).populate({path:'assignedTo',select:'email firstName lastName'});
+
+};
+
+var getTasksAssignedToUserWithStatus = function(req, res) {
+  console.log(`Request parameters :${req.params.userId}`)
+  if(!req.params.userId)
+  {
+    res.status(500).send('Please specify UserId to filter tasks');
+  }
+  var query = {assignedTo:req.params.userId};
+
+  if(req.params.statusId)
+  {
+    console.log('Status:',req.params.statusId)
+    query.status = req.params.statusId
+  }
+
+ 
+
+  Task.find(query, function(err, tasks) {
+    if (err) res.status(500).send(err);
+    else {
+      res.status(201);
+      res.json(tasks);
+    }
+  }).populate({path:'assignedTo',select:'email firstName lastName'});
 
 };
 
@@ -73,5 +118,7 @@ module.exports = {
   getTaskById,
   createTask,
   updateTask,
-  deleteTaskById
+  deleteTaskById,
+  getTasksAssignedToUser,
+  getTasksAssignedToUserWithStatus
 };

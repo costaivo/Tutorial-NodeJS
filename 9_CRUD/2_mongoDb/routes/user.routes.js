@@ -14,4 +14,43 @@ module.exports = function(app) {
       .get(userController.getUserById)
       .put(userController.updateUser)
       .delete(userController.deleteUserById);
+
+
+  
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  var taskController = require('../controllers/task.controller');
+// app
+// .route('/users/:userId/Tasks/:statusId?')
+// .get(taskController.getTasksAssignedToUserWithStatus);
