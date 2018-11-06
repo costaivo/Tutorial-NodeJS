@@ -2,7 +2,6 @@
 module.exports = function(app) {
   var userController = require('../controllers/user.controller');
 
-  // todoList Routes
   app
     .route('/users')
     .get(userController.getUsers)

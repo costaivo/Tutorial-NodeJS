@@ -13,4 +13,5 @@
 - [NodeJs with mySQL](https://medium.com/@prajramesh93/getting-started-with-node-express-and-mysql-using-sequelize-ed1225afc3e0)
 - [Getting Started with Sequelize](https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize)
 - [Debugging NodeJS Application ](https://medium.com/the-node-js-collection/debugging-node-js-with-google-chrome-4965b5f910f4)
+- [10 Best Practices for NodeJS REST API ](https://blog.risingstack.com/10-best-practices-for-writing-node-js-rest-apis/)
 

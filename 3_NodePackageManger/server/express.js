@@ -11,6 +11,7 @@ app.get('/nodeJs',function(req,res){
 })
 
 app.get('/C',function(req,res){
+    console.log(req.params);
     res.send('Hello C#')
 })
 
