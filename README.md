@@ -17,7 +17,7 @@
 - Exporting a Module
 - Using a Custom Module
 
-## Node Package Manger
+## [Node Package Manger](https://github.com/icosta-cci/nodejs/tree/master/3_NodePackageManger)
 
 - What is it?
 - Why is it required?
