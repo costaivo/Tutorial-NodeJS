@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function(app) {
   var userController = require('../controllers/userController');
-
+  var taskController = require('../controllers/task.controller');
   app
     .route('/users')
     .get(userController.getUsers)
@@ -15,7 +15,9 @@ module.exports = function(app) {
       .put(userController.updateUser)
       .delete(userController.deleteUserById);
 
-
+  app
+  .route('/users/:userId/Tasks/:statusId?')
+  .get(taskController.getTasksAssignedToUserWithStatus);
   
 };
 
@@ -50,7 +52,4 @@ module.exports = function(app) {
 
 
 
-//  var taskController = require('../controllers/task.controller');
-// app
-// .route('/users/:userId/Tasks/:statusId?')
-// .get(taskController.getTasksAssignedToUserWithStatus);
+

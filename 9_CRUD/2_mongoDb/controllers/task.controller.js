@@ -107,9 +107,15 @@ var createTask = function(req, res) {
     res.status(400);
     res.send('title is empty');
   } else {
-    task.save();
-    res.status(201);
-    res.send(task);
+    Task.create(task,(err,newTask)=>{
+      if(err)
+      {
+        res.status(500).send(err);
+      }
+      res.status(201);
+      res.send(task);
+    });
+
   }
 };
 

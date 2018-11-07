@@ -62,9 +62,14 @@ var createUser = function(req, res) {
     res.status(400);
     res.send('Email is empty');
   } else {
-    user.save();
-    res.status(201);
-    res.send(user);
+    User.create(user,(err,newUser)=>{
+      if(err)
+       { return res.status(500).send(err);}
+
+        res.status(201);
+        res.send(newUser);
+    })
+   
   }
 };
 
