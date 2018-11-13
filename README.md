@@ -79,3 +79,8 @@
 - API Calls Related to Approving Leave
 
 ## Unit Tests
+
+
+## Best Practices 
+
+- Using [JS Coding Standards](https://www.npmjs.com/package/standard) to have uniform coding pattern.
