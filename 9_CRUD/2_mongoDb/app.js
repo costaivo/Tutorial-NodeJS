@@ -6,12 +6,18 @@ var express = require('express'),
 var app = express();
 var port = process.env.PORT || 3002;
 
+// Import Routes
 var userRouter = require('./Routes/user.routes');
 var taskRouter = require('./Routes/task.routes');
 
 
+//Import Models
 var User = require('./models/user.model');
 var Task = require('./models/task.model');
+
+
+// Enable MongoDb Debuging
+mongoose.set('debug',true);
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
