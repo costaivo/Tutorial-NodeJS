@@ -81,6 +81,7 @@
 ## Unit Tests
 - Karma
 - Protractor
+- Jasmine
 
 
 ## Best Practices 
