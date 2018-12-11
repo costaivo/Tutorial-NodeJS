@@ -84,3 +84,5 @@
 ## Best Practices 
 
 - Using [JS Coding Standards](https://www.npmjs.com/package/standard) to have uniform coding pattern.
+- NPM and NVM Configuration Files
+- Linting your code
