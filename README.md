@@ -79,7 +79,9 @@
 - API Calls Related to Approving Leave
 
 ## Unit Tests
-
+- Karma
+- Protractor
+- Jasmine
 
 ## Best Practices 
 
