@@ -53,6 +53,18 @@ JS CODE ==> [JavaScript Engine] ==> Machine Code
 
 [Installing NodeJs on Mac Machine](https://blog.teamtreehouse.com/install-node-js-npm-mac)
 
+## Installing Code Editor
+
+For code developement you need a IDE, though the code you will be writing in this tutorial can be writted in a simple notepad application a good IDE will help you save lot of time. Below are some of the popular IDE available :
+
+- [VsCode](https://code.visualstudio.com/)
+- [Atom](https://atom.io/)
+- [Notepad++](https://notepad-plus-plus.org/)
+- [Brackets](http://brackets.io/)
+
+In this tutorial we will be using **VsCode** as our editor
+
+
 ## Hello World NodeJS
 
 ```javascript
