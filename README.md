@@ -6,6 +6,7 @@
 - Node Architecture
 - How Node Works
 - Installing Node
+- Installing Code Editor
 - Hello World NodeJS
 - Blocking & Non Blocking Code Example
 
