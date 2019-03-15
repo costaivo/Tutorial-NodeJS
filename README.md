@@ -29,18 +29,6 @@
 - DevDependencies
 - Nodemon
 
-## SQL DB Refresher
-
-- Table
-- Views
-- Stored Procedures
-- Foreign Keys, Primary Keys, Unique Keys
-- Indexes
-
-## Database Design
-
-- Todo Application DB Design Example
-
 ## REST API
 
 - What is Express
@@ -53,6 +41,19 @@
 
 - Using Postman
 - GET/POST/PUT/DELETE Request setup on postman
+- mySQL workbench
+
+## SQL DB Refresher
+
+- Table
+- Views
+- Stored Procedures
+- Foreign Keys, Primary Keys, Unique Keys
+- Indexes
+
+## Database Design
+
+- Todo Application DB Design Example
 
 ## Database Integration
 
@@ -69,23 +70,23 @@
 - API to get Pending ToDo List and Linked Items
 - API to get Upcoming ToDoList and Linked Items
 - Creating API to Add Users
-- Assiging ToDoList to Users
+- Assigning ToDoList to Users
 
 ## Working on Sample Project: Leave Management
 
 - Defining Scope of Project Modules to be developed
 - Database Design
-- API Calls  for  Employee Mangement
+- API Calls  for  Employee Management
 - API Calls  for applying Leave
 - API Calls Related to Approving Leave
 
 ## Unit Tests
+
 - Karma
 - Protractor
 - Jasmine
 
-
-## Best Practices 
+## Best Practices
 
 - Using [JS Coding Standards](https://www.npmjs.com/package/standard) to have uniform coding pattern.
 - NPM and NVM Configuration Files
