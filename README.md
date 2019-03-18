@@ -72,7 +72,7 @@
 - Creating API to Add Users
 - Assigning ToDoList to Users
 
-## Working on Sample Project: Leave Management
+## Working on Sample Project: Assets Management
 
 - Defining Scope of Project Modules to be developed
 - Database Design
