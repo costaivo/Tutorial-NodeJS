@@ -1,5 +1,4 @@
-//Variables
-var name = 'Ivo';
+//Variables name = 'Ivo';
 
 console.log('Name:', name);
 
