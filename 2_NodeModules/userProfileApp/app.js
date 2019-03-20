@@ -58,3 +58,6 @@ function readUserProfileData(){
 function updateUserProfileData(){
     console.log( 'read user profile');
 }
+
+
+//https://nodejs.org/docs/latest-v10.x/api/readline.html#readline_readline_clearscreendown_stream
