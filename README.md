@@ -18,7 +18,7 @@
 - Exporting a Module
 - Using a Custom Module
 
-## [Node Package Manger](http://www.costaivo.com/Tutorial-NodeJS/3_NodePackageManger)
+## [Node Package Manager](http://www.costaivo.com/Tutorial-NodeJS/3_NodePackageManger)
 
 - What is it?
 - Why is it required?
