@@ -10,7 +10,7 @@
 - Hello World NodeJS
 - Blocking & Non Blocking Code Example
 
-## [Node Modules](http://www.costaivo.com/Tutorial-NodeJS/2_NodeModules/README.md)
+## [Node Modules](http://www.costaivo.com/Tutorial-NodeJS/2_NodeModules)
 
 - What is a Module
 - Using a System Module
