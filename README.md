@@ -1,6 +1,6 @@
 # NodeJs Training Program
 
-## [Introduction to NodeJS](https://github.com/icosta-cci/nodejs/tree/master/1_IntroductionToNodeJs)
+## [Introduction to NodeJS](http://www.costaivo.com/Tutorial-NodeJS/1_IntroductionToNodeJs)
 
 - What is NodeJS
 - Node Architecture
@@ -10,7 +10,7 @@
 - Hello World NodeJS
 - Blocking & Non Blocking Code Example
 
-## [Node Modules](https://github.com/icosta-cci/nodejs/blob/master/2_NodeModules/README.md)
+## [Node Modules](http://www.costaivo.com/Tutorial-NodeJS/2_NodeModules)
 
 - What is a Module
 - Using a System Module
@@ -18,7 +18,7 @@
 - Exporting a Module
 - Using a Custom Module
 
-## [Node Package Manger](https://github.com/icosta-cci/nodejs/tree/master/3_NodePackageManger)
+## [Node Package Manager](http://www.costaivo.com/Tutorial-NodeJS/3_NodePackageManger)
 
 - What is it?
 - Why is it required?
