@@ -74,11 +74,17 @@
 
 ## Working on Sample Project: Assets Management
 
-- Defining Scope of Project Modules to be developed
-- Database Design
-- API Calls  for  Employee Management
-- API Calls  for applying Leave
-- API Calls Related to Approving Leave
+- Understanding the existing Project
+- Review the Deployed App
+- Review the Database Schema
+- Select a module from the project for development
+- Use the skeleton project structure to begin developement
+- Design REST API routes for development of selected module
+- Submit completed developement on github
+- Compare the exisitng implementation to your implemeted module.
+   - List out the advantages of your approach vs the existing implementation
+   - Create Task to implement the changes : only if your approach is better than the existing implementation
+  
 
 ## Unit Tests
 
