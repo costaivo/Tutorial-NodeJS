@@ -43,14 +43,6 @@
 - GET/POST/PUT/DELETE Request setup on postman
 - mySQL workbench
 
-## SQL DB Refresher
-
-- Table
-- Views
-- Stored Procedures
-- Foreign Keys, Primary Keys, Unique Keys
-- Indexes
-
 ## Database Design
 
 - Todo Application DB Design Example
