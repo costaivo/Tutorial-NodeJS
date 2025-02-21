@@ -6,185 +6,51 @@
 - pnpm package manager
 - Basic understanding of JavaScript
 
-## Section 1: Getting Started with NodeJS and ExpressJS
+## Tech Stack
 
-This section covers the basics of setting up a NodeJS project and creating simple REST API endpoints using ExpressJS.
+- NodeJS 18.13.0
+- ExpressJS
+- Joi for validations
+- MongoDB
+- Mongoose
+- Docker and Docker compose
 
-### 1.1 Project Setup
+## Getting Started
 
-1. Create a new project directory:
+Each section contains its own setup instructions and examples. Click on the section links above to get started with the tutorial.
 
-```bash
-mkdir rest-api-tutorial
-cd rest-api-tutorial
-```
+## Tutorial Sections
 
-1. Initialize a new NodeJS project:
+### [Section 1: Getting Started with NodeJS and ExpressJS](section-1.md)
 
-```bash
-pnpm init
-```
+- Creating a NodeJS project
+- Setting up ExpressJS
+- Basic routing and controllers
+- HTTP methods and status codes
 
-1. Install ExpressJS:
+### [Section 2: Introduction to Quote Application](section-2.md)
 
-```bash
-pnpm add express
-```
+- Project structure
+- In-memory CRUD operations
+- Working with mock data
+- Basic route organization
 
-### 1.2 Project Structure
+### [Section 3: Integrating MongoDB](section-3.md)
 
-```bash
+- Setting up MongoDB
+- Connecting to MongoDB
+- Using docker compose to start MongoDB
 
-rest-api-tutorial/
-├── src/
-│   ├── controllers/
-│   │   └── helloController.js
-│   └── server.js
-└── package.json
-```
+### [Section 4: Using Mongoose](section-4.md)
 
-### 1.3 Creating Your First Controller
+- Defining Mongoose models
+- CRUD operations with Mongoose
+- Using Mongoose middleware and hooks
 
-Create `src/controllers/helloController.js`:
+### [Section 5: Implementing Validations](section-5.md)
 
-```javascript
-const helloController = {
-    getHello: (req, res) => {
-        res.status(200).json({ message: 'Hello GET Method!' });
-    },
-    
-    postHello: (req, res) => {
-        res.status(201).json({ message: 'Hello POST Method!' });
-    },
-    
-    putHello: (req, res) => {
-        res.status(200).json({ message: 'Hello PUT Method!' });
-    },
-    
-    patchHello: (req, res) => {
-        res.status(200).json({ message: 'Hello PATCH Method!' });
-    },
-    
-    deleteHello: (req, res) => {
-        res.status(200).json({ message: 'Hello DELETE Method!' });
-    }
-};
+- Using Joi for request validation
+- Implementing custom validation middleware
+- Handling validation errors
 
-module.exports = helloController;
-```
 
-### 1.4 Setting up the Express Server
-
-Create `src/server.js`:
-
-```javascript
-const express = require('express');
-const helloController = require('./controllers/helloController');
-
-const app = express();
-const port = 3000;
-
-// Routes
-app.get('/', helloController.getHello);
-app.post('/', helloController.postHello);
-app.put('/', helloController.putHello);
-app.patch('/', helloController.patchHello);
-app.delete('/', helloController.deleteHello);
-
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
-});
-```
-
-### 1.5 Testing the API Endpoints
-
-You can test the endpoints using cURL:
-
-1. GET Request:
-
-```bash
-curl http://localhost:3000
-```
-
-Expected response: `{"message":"Hello GET Method!"}`
-
-1. POST Request:
-
-```bash
-curl -X POST http://localhost:3000
-```
-
-Expected response: `{"message":"Hello POST Method!"}`
-
-1. PUT Request:
-
-```bash
-curl -X PUT http://localhost:3000
-```
-
-Expected response: `{"message":"Hello PUT Method!"}`
-
-4. PATCH Request:
-
-```bash
-curl -X PATCH http://localhost:3000
-```
-
-Expected response: `{"message":"Hello PATCH Method!"}`
-
-5. DELETE Request:
-
-```bash
-curl -X DELETE http://localhost:3000
-```
-
-Expected response: `{"message":"Hello DELETE Method!"}`
-
-### 1.6 Understanding HTTP Status Codes Used
-
-- `200`: Success (Used for GET, PUT, PATCH, DELETE)
-- `201`: Created (Used for POST)
-
-### Running the Project
-
-1. Install dependencies:
-
-```bash
-pnpm install
-```
-
-2. Start the server:
-
-```bash
-node src/server.js
-```
-
-The server will start running on <http://localhost:3000>
-
-### What We've Learned
-
-- Setting up a NodeJS project with PNPM
-- Creating a basic Express server
-- Implementing a controller with different HTTP methods
-- Understanding basic HTTP status codes
-- Testing API endpoints using cURL
-
-### Next Steps
-
-In the next section, we'll learn about:
-
-- Request validation using Joi
-- MongoDB integration
-- Advanced routing concepts
-
-This readme provides a comprehensive guide for Section 1, covering:
-
-- Project setup
-- Controller implementation
-- Server configuration
-- API testing
-- HTTP status codes
-- Clear project structure
-- Running instructions
-
-The content aligns with your tutorial context and provides a solid foundation for the upcoming sections. Would you like me to modify or expand any part?

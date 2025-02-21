@@ -1,0 +1,44 @@
+version: '3'
+
+services:  
+  # Name our service will be known by
+  mongoDb:
+    container_name: "exam-mongodb-service"
+    # version of mongo we'll use
+    image: mongo:4.2
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+
+    # local port mapping to container port.  Remember, this
+    # doesn't have to be 27017, you could make this availble
+    # on port 3000 on our local machine via 3000:27017
+    # if we really wanted to.
+    ports:
+      - 27017:27017
+
+    # using a named volume
+    volumes:
+      - mongodb_data_container:/data/db
+
+    # OPTIONAL: This enforces the need for authentication
+    command: mongod --auth
+
+  mongo-express:
+    image: mongo-express:latest
+    container_name: "exam-mongo-express"
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: rootpassword
+      ME_CONFIG_MONGODB_SERVER: mongoDb
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: pass
+      ME_CONFIG_MONGODB_URL: mongodb://root:rootpassword@mongoDb:27017/
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongoDb
+
+volumes:  
+  mongodb_data_container:
